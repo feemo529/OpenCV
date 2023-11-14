@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="01_opencv.cpp" />
+    <ClCompile Include="02_Mat容器.cpp" />
+    <ClCompile Include="03_图像读取、显示、保存.cpp" />
+    <ClCompile Include="04_视频加载与摄像头调用.cpp" />
+    <ClCompile Include="05_图像颜色空间转换.cpp" />
+    <ClCompile Include="06_图像像素比较.cpp" />
+    <ClCompile Include="07_图像像素逻辑操作.cpp" />
+    <ClCompile Include="08_图像二值化.cpp" />
+    <ClCompile Include="09_LUT查找表.cpp" />
+    <ClCompile Include="11_图像尺寸变换.cpp" />
+    <ClCompile Include="12_图像仿射变换.cpp" />
+    <ClCompile Include="13_图像透视变换.cpp" />
+    <ClCompile Include="14_图像绘制图形.cpp" />
+    <ClCompile Include="15_ROI区域截取.cpp" />
+    <ClCompile Include="16_高斯图像金字塔.cpp" />
+    <ClCompile Include="17_拉普拉斯金字塔.cpp" />
+    <ClCompile Include="18_滑动条.cpp" />
+    <ClCompile Include="19_鼠标响应事件.cpp" />
+    <ClCompile Include="20_直方图绘制.cpp" />
+    <ClCompile Include="21_直方图均衡化.cpp" />
+    <ClCompile Include="22_直方图匹配.cpp" />
+    <ClCompile Include="23_模板匹配.cpp" />
+    <ClCompile Include="24_图像卷积.cpp" />
+    <ClCompile Include="25_噪声的产生.cpp" />
+    <ClCompile Include="26_线性滤波.cpp" />
+    <ClCompile Include="27_非线性滤波—中值滤波.cpp" />
+    <ClCompile Include="28_可分离滤波.cpp" />
+    <ClCompile Include="29_边缘检测-Sobel和Scharr算子.cpp" />
+    <ClCompile Include="30_边缘检测-拉普拉斯算子和Canny算子.cpp" />
+    <ClCompile Include="31_连通域分析.cpp" />
+    <ClCompile Include="32_图像距离变换.cpp" />
+    <ClCompile Include="33_形态学操作_图像腐蚀.cpp" />
+    <ClCompile Include="34_形态学操作_图像膨胀.cpp" />
+    <ClCompile Include="35_形态学应用.cpp" />
+    <ClCompile Include="36_图像细化.cpp" />
+    <ClCompile Include="37_轮廓检测.cpp" />
+    <ClCompile Include="38_轮廓信息统计.cpp" />
+    <ClCompile Include="39_轮廓外接多边形.cpp" />
+    <ClCompile Include="40_凸包检测.cpp" />
+    <ClCompile Include="41_直线检测.cpp" />
+    <ClCompile Include="42_点集拟合.cpp" />
+    <ClCompile Include="43_二维码检测.cpp" />
+    <ClCompile Include="44_积分图像.cpp" />
+    <ClCompile Include="45_漫水填充法.cpp" />
+    <ClCompile Include="46_分水岭法.cpp" />
+    <ClCompile Include="47_Harris角点检测.cpp" />
+    <ClCompile Include="48_Shi-Tomas角点检测.cpp" />
+    <ClCompile Include="49_亚像素级别角点位置优化.cpp" />
+    <ClCompile Include="50_ORB特征点提取.cpp" />
+    <ClCompile Include="51_特征点匹配.cpp" />
+    <ClCompile Include="52_RANSAC优化特征匹配.cpp" />
+    <ClCompile Include="53_相机模型与投影.cpp" />
+    <ClCompile Include="54_单目相机标定.cpp" />
+    <ClCompile Include="55_图像校正.cpp" />
+    <ClCompile Include="56_单目相机位姿校正.cpp" />
+    <ClCompile Include="57_差值法检测物体移动.cpp" />
+    <ClCompile Include="58_稠密光流法跟踪.cpp" />
+    <ClCompile Include="59_稀疏光流法跟踪.cpp" />
+    <ClCompile Include="60_监督学习聚类.cpp" />
+    <ClCompile Include="61_K近邻训练.cpp" />
+    <ClCompile Include="62_支持向量机训练.cpp" />
+    <ClCompile Include="63_K均值聚类.cpp" />
+    <ClCompile Include="64_加载深度神经网络.cpp" />
+    <ClCompile Include="65_深度神经网络模型的使用.cpp" />
+    <ClCompile Include="66_风格迁移变换.cpp" />
+    <ClCompile Include="67_人脸识别.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8a28633f-587c-442e-a93c-7277a4fc204a}</ProjectGuid>
+    <RootNamespace>learnOpenCV</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\Program Files\opencv\build\install\include\opencv2;D:\Program Files\opencv\build\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Program Files\opencv\build\install\x64\vc17\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_world480d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
